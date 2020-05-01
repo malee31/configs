@@ -1,0 +1,9 @@
+# Credential and Testing Files
+private/
+
+# Node Files
+node_modules/
+
+# Vim Swap Files
+*.swo
+*.swp
