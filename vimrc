@@ -2,9 +2,12 @@ syntax enable
 set autoindent
 set autoread
 set background=dark
+set backspace=indent,eol,start
 set cursorcolumn
 set cursorline
 set hlsearch
+set ignorecase
+set incsearch
 set linebreak
 set list
 set listchars=tab:\>\ 
@@ -12,6 +15,7 @@ set mouse=a
 set nocompatible
 set number
 set scrolloff=4
+set smartcase
 set tabstop=3
 set title
 set wildmenu
