@@ -1,28 +1,40 @@
-syntax enable
+" Indentation and Spacing
 set autoindent
-set autoread
-set background=dark
-set backspace=indent,eol,start
-set cursorcolumn
-set cursorline
-set hlsearch
-set ignorecase
-set incsearch
-set linebreak
 set list
 set listchars=tab:\>\ 
-set mouse=a
+set tabstop=3
+set shiftwidth=3
+
+" Searching and Casing
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set wildmenu
+
+" Quality of Life
 set nocompatible
+set autoread
+set backspace=indent,eol,start
+set linebreak
+set mouse=a
 set number
 set scrolloff=4
-set smartcase
-set tabstop=3
 set title
-set wildmenu
+
+" Syntax and Display
+syntax enable
+colo elflord
+set background=dark
+set cursorcolumn
+set cursorline
 hi Search ctermbg=Cyan
 hi Search ctermfg=Black
 hi clear CursorLine
 hi default link CursorLine CursorColumn
+hi CursorColumn gui=underline cterm=underline ctermbg=233
+
+"Macros
 let @b="mx?\\/\\*\<CR>2d /\\*\\/\<CR>2d `x"
 let @c="^i//\<Esc>"
 let @i=":set paste\<CR>i<!DOCTYPE html>\<CR>\<Tab><head>\<CR>\<Tab>\<Tab><title>Welcome</title>\<CR>\<Tab>\<Tab><link rel=\"stylesheet\" href=\"./styles.css\">\<CR>\<Tab></head>\<CR>\<Tab><body>\<CR>\<Tab>\<Tab>\<CR>\<Tab>\<Tab><script src=\"scripts.js\">\<CR>\<Tab></body>\<CR></html>\<Esc>:set nopaste\<CR>kkk$"
