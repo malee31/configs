@@ -22,6 +22,13 @@ set number
 set scrolloff=4
 set title
 
+" Status Line
+set laststatus=2
+set statusline= "Clear status line
+set statusline+=Current\ File:\ %t%y\ %M\  "File path relative to current directory
+set statusline+=%=
+set statusline+=Line\ %2l\ of\ %L,\ Column\ %-2c\ %2p\ Percent "Position in the file
+
 " Syntax and Display
 syntax enable
 colo elflord
