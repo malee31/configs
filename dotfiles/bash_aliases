@@ -7,14 +7,19 @@ alias gac='ga && gc'
 alias gp='git push'
 alias gcl='git clone'
 alias gpp='git pull'
+alias gs='git status'
 
 # Personal functions
 gacp () {
 	git add .
 	git commit -m "$1"
-	git push origin master
+	git push
 }
 
 gcll () {
 	git clone "https://github.com/$1/$2.git"
 }
+
+# Using bash_aliases as a bashrc
+bind TAB:menu-complete
+bind '"\e[Z":menu-complete-backward'
