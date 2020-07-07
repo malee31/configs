@@ -32,3 +32,6 @@ gcll () {
 # Using bash_aliases as a bashrc
 bind TAB:menu-complete
 bind '"\e[Z":menu-complete-backward'
+
+#ctags for js
+alias ctagsjs='ctags --options=NONE --options=${HOME}/.ctagsrc -R .'

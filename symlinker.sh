@@ -2,7 +2,7 @@
 
 if [ "$1" ]
 then
-	dotfilePath=$1
+	dotfilePath="$1"
 else
 	dotfilePath="$HOME/configs/dotfiles"
 fi
@@ -13,3 +13,4 @@ ln -s "${dotfilePath}/vimrc" ~/.vimrc
 ln -s "${dotfilePath}/bash_aliases" ~/.bash_aliases
 ln -s "${dotfilePath}/gitconfig" ~/.gitconfig
 ln -s "${dotfilePath}/tmux.conf" ~/.tmux.conf
+ln -s "${dotfilePath}/ctagsrc" ~/.ctagsrc
