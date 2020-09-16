@@ -9,6 +9,9 @@
 #     . ~/.bash_aliases
 # fi
 
+# Quality of Life Shortcuts
+alias npxserve='npx http-server -c-1'
+
 # Git Aliases and Functions
 alias ga='git add .'
 alias gc='git commit -m'
