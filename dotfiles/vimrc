@@ -11,16 +11,22 @@ set incsearch
 set ignorecase
 set smartcase
 set wildmenu
+set wildignore+=.pyc,.swp,.swo,.java
 
 " Quality of Life
 set nocompatible
 set autoread
 set backspace=indent,eol,start
+set number
 set linebreak
 set mouse=a
-set number
-set scrolloff=4
+set noerrorbells
+set visualbell
+set scrolloff=7
+set sidescrolloff=10
+set nrformats-=octal
 set title
+set wrap
 
 " Status Line
 set laststatus=2
@@ -32,6 +38,8 @@ set statusline+=Line\ %2l\ of\ %L,\ Column\ %-2c\ %2p\ Percent "Position in the 
 " Syntax and Display
 syntax enable
 colo elflord
+" Looks terrible. Haven't configs highlighting for it yet
+" set spell
 set background=dark
 set cursorcolumn
 set cursorline
