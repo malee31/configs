@@ -1,3 +1,6 @@
+" Intellij Specific
+set clipboard+=unnamed
+
 " Indentation and Spacing
 set autoindent
 set list
@@ -37,7 +40,7 @@ set statusline+=Line\ %2l\ of\ %L,\ Column\ %-2c\ %2p\ Percent "Position in the 
 
 " Syntax and Display
 syntax enable
-colo torte
+colo elflord
 " Looks terrible. Haven't configs highlighting for it yet
 " set spell
 set background=dark

@@ -1,5 +1,5 @@
 [user]
-	email = 43216761+malee31@users.noreply.github.com
 	name = Marvin Lee
-[credential]
-	helper = /mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe
+	email = marvinlee.github@gmail.com
+[init]
+	defaultBranch = master
